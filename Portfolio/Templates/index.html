@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static '/images/logo.png' %}"
+    />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Portfolio - Supreet</title>
+  </head>
+
+  <body>
+    <!-- header section starts -->
+
+    <header>
+      <div class="user">
+        <img src="{% static 'images/logo.png' %}" alt="" />
+        <h3 class="name">Supreet Vajjaramatti</h3>
+        <p class="post">Full Stack developer</p>
+      </div>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="#home">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#education">education</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <h3>HI THERE !</h3>
+      <h1>I'M <span>Supreet Vajjaramatti</span></h1>
+      <p>Full Stack Web Developer</p>
+      <a href="#about"
+        ><button class="btn">about me <i class="fas fa-user"></i></button
+      ></a>
+    </section>
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span> me</h1>
+      <div class="row">
+        <div class="info">
+          <h3><span> name : </span> Supreet Vajjaramatti</h3>
+          <h3><span> age : </span> 21</h3>
+          <h3><span> qualification : </span> B.E</h3>
+          <h3><span> post : </span> Full Stack developer</h3>
+          <h3><span> language : </span>English, Hindi, Kannada</h3>
+          <a
+            href="https://drive.google.com/open?id=17jrgkkDTU3HqgSnYRhbognHjLDfhywjf&usp=drive_fs"
+            ><button class="btn">
+              download CV <i class="fas fa-download"></i></button
+          ></a>
+        </div>
+        <div class="counter">
+          <div class="box">
+            <span>1+</span>
+            <h3>years of experience</h3>
+          </div>
+          <div class="box">
+            <span>5+</span>
+            <h3>Projects Completed</h3>
+          </div>
+          <div class="box">
+            <span>10+</span>
+            <h3>happy clients</h3>
+          </div>
+          <div class="box">
+            <span>8+</span>
+            <h3>language</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- education section -->
+
+    <section class="education" id="education">
+      <h1 class="heading">my <span>education</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-education-cap"></i>
+          <span>2018</span>
+          <h3>Secondary Education</h3>
+          <h2>Cambridge English Medium School Ramdurg</h2>
+          <p>Percentage - 85%</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-education-cap"></i>
+          <span>2020</span>
+          <h3>Pre University</h3>
+          <h2>Alva's Pre University College Moodbidri DK</h2>
+          <p>Percentage - 76%</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-education-cap"></i>
+          <span>2024</span>
+          <h3>Bachelor of Engineering</h3>
+          <h2>KLE College of Engineering and Technology Chikkodi</h2>
+          <p>CGPA - 7.5</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio section -->
+
+    <section class="portfolio" id="portfolio">
+      <h1 class="heading">my <span>portfolio</span></h1>
+      <div class="box-container">
+        <div class="box">
+          <a href="https://github.com/supreetvajjarmatti/Blog_page">
+            <img src="{% static 'images/img1.jpeg' %}" alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/">
+            <img src="{% static 'images/img2.jpeg' %}" alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/"></a>
+          <img src="{% static 'images/img3.jpeg' %}" alt="" />
+        </div>
+        <div class="box">
+          <a href="https://github.com/">
+            <img src="{% static 'images/img4.jpeg' %}" alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/">
+            <img src="{% static 'images/img5.jpeg' %}" alt=""
+          /></a>
+        </div>
+        <div class="box">
+          <a href="https://github.com/">
+            <img src="{% static 'images/img6.jpeg' %}" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact" id="contact">
+      <h1 class="heading">contact <span>me</span></h1>
+      <div class="row">
+        <div class="content">
+          <h3 class="title">contact info</h3>
+          <div class="info">
+            <h3>
+              <i class="fas fa-envelope"></i>supreetvajjaramatti@gmail.com
+            </h3>
+            <h3><i class="fas fa-phone"></i>7411676156</h3>
+            <h3>
+              <i class="fas fa-map-marker-alt"></i>karanataka, India - 591123
+            </h3>
+          </div>
+        </div>
+        <form action="{% url 'success_page' %}" method="post">
+          {% csrf_token %}
+          <input
+            type="text"
+            name="name"
+            placeholder="name"
+            class="box"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="email"
+            class="box"
+            required
+          />
+          <input
+            type="text"
+            name="project"
+            placeholder="project"
+            class="box"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            class="box message"
+            placeholder="message"
+            name="message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">
+            Send <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- scroll top button -->
+
+    <a href="#home" class="top">
+      <img src="{% static 'images/logo1.png' %}" alt="" class="icon" />
+    </a>
+
+    <!-- jquery cdnn link -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <!-- custom js file -->
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>

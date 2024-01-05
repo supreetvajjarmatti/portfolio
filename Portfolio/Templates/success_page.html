@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/success_page.css' %}">
+    <title>Contact Form Submitted Successfully</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="success-message">
+        <h1>Your message has been submitted successfully!</h1>
+        <p>Thank you for contacting us. We'll get back to you as soon as possible.</p>
+        <a href="{% url 'index' %}">Back to Home</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+*{
+    background-color: white;
+}
+
+h1{
+    color: green;
+    text-align: center;
+}
+
+p{
+    color: green;
+    text-align: center;
+}
+
+a{
+    cursor: pointer;
+    position: fixed;
+    left: 48%;
+}
